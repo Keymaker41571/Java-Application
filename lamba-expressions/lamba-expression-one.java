@@ -4,16 +4,13 @@ public class LambaExpressionOne {
 		
 		School school = (konrad, konradgmail) -> {
 			System.out.println("Name: " + konrad + " & Email: " + konradgmail);
-			return "hi der";	
-				
+			return "hi der";			
 		};
 		System.out.println(school.bookAppointment("Konrad", "konradgmail"));
 		School.print();
 		School.show();
-		School.add(5, 2);
-			
+		School.add(5, 2);		
 	}
-
 
 @FunctionalInterface
 interface School {	
@@ -23,7 +20,6 @@ interface School {
 		System.out.println("Hey im being called from Functional interface school - via static method");
 	}
 	
-	
 	static void show() {
 		System.out.println("Hey im being called from Functional interface school - via default method method");
 	}
@@ -31,8 +27,7 @@ interface School {
 	public static void add(int x, int y) {
 		int sum = x + y;
 		System.out.println("Simple add method from Functional interface, Sum is: " + sum);
-	}
-	
+	}	
 }
 }
 
