@@ -2,11 +2,11 @@ public class LambaExpressionOne {
 	
 	public static void main(String[] args) {
 		
-		School school = (konrad, konradgmail) -> {
-			System.out.println("Name: " + konrad + " & Email: " + konradgmail);
+		School school = (sam, samgmail) -> {
+			System.out.println("Name: " + konrad + " & Email: " + samgmail);
 			return "hi der";			
 		};
-		System.out.println(school.bookAppointment("Konrad", "konradgmail"));
+		System.out.println(school.bookAppointment("sam", "sam"));
 		School.print();
 		School.show();
 		School.add(5, 2);		
@@ -14,7 +14,7 @@ public class LambaExpressionOne {
 
 @FunctionalInterface
 interface School {	
-	public String bookAppointment(String konrad, String konradgmail);
+	public String bookAppointment(String sam, String samgmail);
 	
 	public static void print() {
 		System.out.println("Hey im being called from Functional interface school - via static method");
