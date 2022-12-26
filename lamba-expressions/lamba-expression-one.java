@@ -3,7 +3,7 @@ public class LambaExpressionOne {
 	public static void main(String[] args) {
 		
 		School school = (sam, samgmail) -> {
-			System.out.println("Name: " + konrad + " & Email: " + samgmail);
+			System.out.println("Name: " + sam + " & Email: " + samgmail);
 			return "hi der";			
 		};
 		System.out.println(school.bookAppointment("sam", "sam"));
